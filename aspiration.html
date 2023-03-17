@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <title>Home Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"
+    defer></script>
+  <link href="css/aspiration.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!--Nav bar-->
+  <nav id="navbar" class="navbar navbar-expand-lg py-1 fixed-top">
+    <div class="container">
+      <!--Downloaded from https://www.logolynx.com/topic/singapore+poly#&gid=1&pid=6 public domain images-->
+      <a class="navbar-brand" href="#"><img src="./img/logo.jpg" width="45" height="60" alt="SP Logo" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+        aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsMenu">
+        <ul id="navbar_items" class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-3">
+            <a class="nav-link" aria-current="page" href="index.html">ABOUT</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link active" aria-current="page" href="aspiration.html">ASPIRATIONS</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" aria-current="page" href="life_at_sp.html">LIFE AT SP</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" aria-current="page" href="feedback.html">FEEDBACK</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--First container containing the intro text to the careers-->
+  <div class="container mb-3 mt-5 pt-5">
+    <div class="row">
+      <h1 id="intro">I aspire to be a ...</h1>
+    </div>
+  </div>
+
+  <!--Second container containing the 3 cards stored in 3 columns-->
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 pt-3">
+        <!--First card-->
+        <div class="card">
+          <div id="card1Content">
+
+            <div id="card1Front" class="card-body text-center d-grid">
+              <h3 id="card1Title" class="card-title text-capitalize">Machine learning engineer</h3>
+              <p id="card1Subtitle" class="card-text text-capitalize small text-white mt-5">The forefront of Artificial
+                Intelligence!</p>
+            </div>
+
+            <div id="card1Back" class="card-body">
+              <p id="card1Body" class="card-text">A machine learning engineer is someone who focuses on researching,
+                building and
+                designing self-running artificial intelligence systems to automate predictive models.<br><br>
+                The idea of creating an automated system that is able to classify data and make predictions based on its
+                analysis is fascinating to me.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 pt-3">
+        <!--Second card-->
+        <div class="card">
+          <div id="card2Content">
+
+            <div id="card2Front" class="card-body text-center d-grid">
+              <h3 id="card2Title" class="card-title text-capitalize">Software developer</h3>
+              <p id="card2Subtitle" class="card-text text-capitalize small text-white mt-5 pt-5">The creators and
+                maintainers of
+                computer systems!</p>
+            </div>
+
+            <div id="card2Back" class="card-body">
+              <p id="card2Body" class="card-text">A software engineer is a person who is dedicated to the process of
+                creating, designing, deploying and supporting software.
+                <br><br>
+                This profession appeals to me as it involves analysing a problem, coming up with an initial approach
+                and then systematically getting closer to delivering a solution by learning from mistakes made.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 pt-3 mx-auto">
+        <!--Third card-->
+        <div class="card">
+          <div id="card3Content">
+
+            <div id="card3Front" class="card-body text-center d-grid">
+              <h3 id="card3Title" class="card-title text-capitalize">Web developer</h3>
+              <p id="card3Subtitle" class="card-text text-capitalize small text-white mt-5 pt-5">The designers and
+                creators of
+                websites!</p>
+            </div>
+
+            <div id="card3Back" class="card-body">
+              <p id="card3Body" class="card-text">A Web developer is a kind of programmer who specializes in the
+                development of applications relating to the World Wide Web.
+                <br><br>
+                I find that this profession is a pleasant fusion of creative and logical thinking as both aesthetics
+                and function matter in this field.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Bootstrap footer that contains contact info and social media icons-->
+  <footer id="footer" class="d-flex flex-wrap justify-content-between align-items-center py-4 mt-5">
+    <div class="row container-fluid">
+      <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center justify-content-center pt-2">
+        <p class="mb-0 mb-md-0 footer_text border-bottom">ADDRESS</p>
+        <address class="footer_text text-center pt-3">500 Dover Road<br>Singapore 139651</address>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center justify-content-center pt-2">
+        <p class="mb-0 mb-md-0 footer_text border-bottom">CONTACT</p>
+        <address class="footer_text text-center pt-3">+65 9876 54321<br>sample@mail.com</address>
+      </div>
+      <ul
+        class="nav col-12 col-md-12 col-lg-4 pt-2 pt-md-3 justify-content-center align-items-center list-unstyled d-flex">
+        <!--Social media icons downloaded from bootstrap and then inverted to fit a dark background-->
+        <li class="ms-3 mx-4"><a class="text-muted" href="#"><img id="insta" src="img/instagram.svg" class="bi"
+              width="30" height="30" alt="instagram icon"></a></li>
+        <li class="ms-3 mx-4"><a class="text-muted" href="#"><img id="twitter" src="img/twitter.svg" class="bi"
+              width="30" height="30" alt="twitter icon"></a></li>
+        <li class="ms-3 mx-4"><a class="text-muted" href="#"><img id="facebook" src="img/facebook.svg" class="bi"
+              width="30" height="30" alt="facebook icon"></a></li>
+        <li class="ms-3 mx-4"><a class="text-muted" href="#"><img id="dribbble" src="img/dribbble.svg" class="bi"
+              width="30" height="30" alt="ball icon"></a></li>
+      </ul>
+    </div>
+    <!--Copyright disclaimer-->
+    <div class="d-flex flex-sm-row justify-content-center pt-4 mt-4 container-fluid">
+      <p id="copyright_text" class="col-md-4 ml-5 text-center">© FEDesigns. All rights reserved.</p>
+      <div class="col-md-8"></div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

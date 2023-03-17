@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <title>Home Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"
+    defer></script>
+  <link href="css/feedback.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!--Nav bar-->
+  <nav id="navbar" class="navbar navbar-expand-lg py-1 fixed-top">
+    <div class="container">
+      <!--Downloaded from https://www.logolynx.com/topic/singapore+poly#&gid=1&pid=6 public domain images-->
+      <a class="navbar-brand" href="#"><img src="./img/logo.jpg" width="45" height="60" alt="SP Logo" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+        aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsMenu">
+        <ul id="navbar_items" class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-3">
+            <a class="nav-link" aria-current="page" href="index.html">ABOUT</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" aria-current="page" href="aspiration.html">ASPIRATIONS</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" aria-current="page" href="life_at_sp.html">LIFE AT SP</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link active" aria-current="page" href="feedback.html">FEEDBACK</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Container containing both quote block and feedback form-->
+  <div class="container mt-5 pt-5">
+    <div class="row justify-content-between">
+      <!--Quote block element-->
+      <figure id="quoteBlock" class="col-12 col-lg-5">
+        <blockquote class="blockquote mt-5 text-center">
+          <p id="quote" class="h2">"We all need people who can give us feedback.<br>That is how we improve."</p>
+        </blockquote>
+        <figcaption class="blockquote-footer text-center mt-5">
+          Bill Gates
+        </figcaption>
+      </figure>
+      <!--Column containing the form elements-->
+      <div class="col-lg-6 mt-3">
+        <!--novalidate boolean attribute disables the browser default feedback tooltips, but still provides access to the form validation APIs in JavaScript. -->
+        <!--Bootstrap scopes the :invalid and :valid styles to parent .was-validated class-->
+        <form class="row g-3 needs-validation was-validated" novalidate>
+          <!--form element for first name with regex pattern-->
+          <div class="col-md-4">
+            <label for="firstName" class="form-label">First name</label>
+            <input type="text" class="form-control" id="firstName" value="Mark" pattern="[a-zA-Z][a-zA-Z ]+" required>
+            <!--valid and invalid messages-->
+            <div class="valid-feedback">Valid input!</div>
+            <div class="invalid-feedback">Try again with a proper name.</div>
+          </div>
+          <!--form element for last name with regex pattern-->
+          <div class="col-md-4">
+            <label for="lastName" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="lastName" value="Otto" pattern="[a-zA-Z][a-zA-Z ]+" required>
+            <div class="valid-feedback">Valid input!</div>
+            <div class="invalid-feedback">Try again with a proper name.</div>
+          </div>
+          <!--form element for phone number with regex pattern-->
+          <div class="col-md-4">
+            <label for="number" class="form-label">Phone number</label>
+            <div class="input-group">
+              <span class="input-group-text" id="inputGroupPrepend2">+65</span>
+              <input type="tel" class="form-control" id="number" aria-describedby="inputGroupPrepend2" value="12345678"
+                pattern="^[0-9]{8}$" required>
+              <div class="valid-feedback">Valid input!</div>
+              <div class="invalid-feedback">Try again with a proper number.</div>
+            </div>
+          </div>
+          <!--form element for comments-->
+          <div class="col-md-12">
+            <label for="validationTextarea" class="form-label">Comments:</label>
+            <textarea class="form-control" id="validationTextarea" placeholder="We would love to hear your opinion!"
+              required></textarea>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please enter a message in the textarea.</div>
+          </div>
+          <!--form element for privacy checkbox-->
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheckPrivacy" required>
+              <label class="form-check-label" for="invalidCheckPrivacy">
+                I agree to the privacy policy
+              </label>
+            </div>
+          </div>
+          <!--submit button-->
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--Bootstrap footer that contains contact info and social media icons-->
+  <footer id="footer" class="d-flex flex-wrap justify-content-between align-items-center py-4 mt-5">
+    <div class="row container-fluid">
+      <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center justify-content-center pt-2">
+        <p class="mb-0 mb-md-0 footer_text border-bottom">ADDRESS</p>
+        <address class="footer_text text-center pt-3">500 Dover Road<br>Singapore 139651</address>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center justify-content-center pt-2">
+        <p class="mb-0 mb-md-0 footer_text border-bottom">CONTACT</p>
+        <address class="footer_text text-center pt-3">+65 9876 54321<br>sample@mail.com</address>
+      </div>
+      <ul
+        class="nav col-12 col-md-12 col-lg-4 pt-2 pt-md-3 justify-content-center align-items-center list-unstyled d-flex">
+        <!--Social media icons downloaded from bootstrap and then inverted to fit a dark background-->
+        <li class="ms-3 mx-4"><a class="text-muted" href="#"><img id="insta" src="img/instagram.svg" class="bi"
+              width="30" height="30" alt="instagram icon"></a></li>
+        <li class="ms-3 mx-4"><a class="text-muted" href="#"><img id="twitter" src="img/twitter.svg" class="bi"
+              width="30" height="30" alt="twitter icon"></a></li>
+        <li class="ms-3 mx-4"><a class="text-muted" href="#"><img id="facebook" src="img/facebook.svg" class="bi"
+              width="30" height="30" alt="facebook icon"></a></li>
+        <li class="ms-3 mx-4"><a class="text-muted" href="#"><img id="dribbble" src="img/dribbble.svg" class="bi"
+              width="30" height="30" alt="ball icon"></a></li>
+      </ul>
+    </div>
+    <!--Copyright disclaimer-->
+    <div class="d-flex flex-sm-row justify-content-center pt-4 mt-4 container-fluid">
+      <p id="copyright_text" class="col-md-4 ml-5 text-center">© FEDesigns. All rights reserved.</p>
+      <div class="col-md-8"></div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

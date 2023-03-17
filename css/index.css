@@ -1,0 +1,149 @@
+@charset "utf-8";
+/*Downloaded from http://www.freefontsdownload.net*/
+@font-face {
+    font-family: ArialN;
+    src: url('../fonts/AN/ARIALN.TTF');
+}
+/*Downloaded from https://www.download-free-fonts.com/*/
+@font-face {
+    font-family: ArialR;
+    src: url('../fonts/AB/arlrdbd.ttf');
+}
+
+/*entire document style*/
+:root {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/*Nav bar styles*/
+#navbar {
+  background-color: #EBEBEB;
+}
+
+#navbar_items > li {
+  font-family: "ArialN", Arial;
+}
+
+#navbar_items > li:hover {
+  transform:scale(1.2)
+}
+
+/*First row styles*/
+.profile-img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+  max-height: 70vh;
+
+}
+
+.intro-text {
+  font-family: "ArialR", Arial;
+}
+
+/*Animation to give typewriter blinking effect*/
+#block {
+  animation-name: blinker;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 5;
+}
+
+@keyframes blinker{
+  50%{
+    opacity: 0;
+  }
+}
+
+/*Second row styles*/
+.second-bg {
+  background: #EBEBEB;
+}
+
+.card-2nd-row:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+  z-index: 3;
+}
+
+.card-title {
+  font-family: "ArialR", Arial;
+}
+
+.card-text {
+  font-family: "ArialN", Arial;
+}
+
+/*Third row styles*/
+.table-hd {
+  width: 20%;
+}
+
+/*Fourth row styles*/
+#info-img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+  max-height: 50vh;
+}
+
+#intro-text2 {
+  font-family: "ArialN", Arial;
+}
+
+.buttonCol {
+  background-color: rgba(32,54,143,1);
+}
+
+
+/*Footer styles*/
+#footer {
+  background-color: #323232;
+  color: #EBEBEB;
+}
+
+.footer_text {
+  font-family: "ArialN", Arial;
+  color: #EBEBEB;
+}
+
+#insta {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+#insta:hover {
+  transform: scale(1.3);
+}
+
+#twitter {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+#twitter:hover {
+  transform: scale(1.3);
+}
+
+#facebook {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+#facebook:hover {
+  transform: scale(1.3);
+}
+
+#dribbble {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+#dribbble:hover {
+  transform: scale(1.3);
+}
+
+#copyright_text {
+  font-size: 0.7em;
+}
