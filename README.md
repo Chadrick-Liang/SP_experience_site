@@ -14,4 +14,4 @@ Flip card through CSS transform rotateY property.
 ![Screenshot of aspirations page](/display_images/aspirations.png)
 
 
-Simply download the repo and double click on index.html
+Simply download the repo and double click on index.html.
